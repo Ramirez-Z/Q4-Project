@@ -2,10 +2,10 @@
   background-color: rgb(206, 196, 90);
 }
 
-.nav-link- {
+.nav-link {
   color: white;
+  font-family: Poetsen One;
 }
-
 .search {
   margin-left: auto;
 }

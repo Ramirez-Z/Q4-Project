@@ -4,6 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+    <!-- Poetsen One -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- tab icon -->
+    <link rel="icon" type="image/x-icon" href="snoopy-icon.png" />
+
     <!--bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
@@ -26,23 +37,23 @@
 
           <ul class="navbar-nav">
             <li>
-              <a class="nav-link" href="#">Profile</a>
+              <a class="nav-link" id="prof">Profile</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page2.html">1st Quarter</a>
+              <a class="nav-link" id="1st">1st Quarter</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page3.html">2nd Quarter</a>
+              <a class="nav-link" id="2nd">2nd Quarter</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page4.html">3rd Quarter</a>
+              <a class="nav-link" id="3rd">3rd Quarter</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page5.html">What's Next</a>
+              <a class="nav-link" id="4th">What's Next</a>
             </li>
           </ul>
 
@@ -53,14 +64,75 @@
         </nav>
       </div>
 
+      <script>
+        let profile = "mainpage.html"; //replaces href of the bootstrap code
+        document.getElementById("prof").onclick = function () {
+          //gets the element via id
+          window.location.replace(profile); //function allows the variable be replaced with the new window link
+        };
+
+        let quarter1 = "page2.html"; //replaces href of the bootstrap code
+        document.getElementById("1st").onclick = function () {
+          //gets the element via id
+          window.location.replace(quarter1); //function allows the variable be replaced with the new window link
+        };
+
+        let quarter2 = "page3.html"; //replaces href of the bootstrap code
+        document.getElementById("2nd").onclick = function () {
+          //gets the element via id
+          window.location.replace(quarter2); //function allows the variable be replaced with the new window link
+        };
+
+        let quarter3 = "page4.html"; //replaces href of the bootstrap code
+        document.getElementById("3rd").onclick = function () {
+          //gets the element via id
+          window.location.replace(quarter3); //function allows the variable be replaced with the new window link
+        };
+
+        let whats_next = "page5.html"; //replaces href of the bootstrap code
+        document.getElementById("4th").onclick = function () {
+          //gets the element via id
+          window.location.replace(whats_next); //function allows the variable be replaced with the new window link
+        };
+      </script>
+
       <br /><br />
 
-      <div class="container">
-        <p class="h1 text-center">ONLINE PORTFOLIO</p>
-      </div>
+      <div class="container content">
+        <img
+          src="fb-pfp.png"
+          width="250px"
+          alt="user-profile"
+          class="mx-auto d-block rounded-circle pfp"
+        />
+        <br />
 
-      <div class="footer"></div>
-      <!--add footer elements -->
+        <div class="text-center description">
+          <p class="h1 text-center">WELCOME TO MY ONLINE PORTFOLIO</p>
+          <br /><br />
+          <p class="h4">
+            This is my Grade 9 Portfolio. It containts all the ICT projects I've
+            done throughout the school year. These projects range from basic
+            HTML elements to complex CSS and Bootstrap functions and designs.
+          </p>
+        </div>
+      </div>
+      <br /><br /><br /><br />
+      <div class="container overview">
+        <p class="h4">
+          The First Quarter focuses only on the use of basic HTML elements and
+          designing tools only. No CSS properties or elements were used in this
+          quarter's project.
+          <br /><br />
+          The Second Quarter will know see the use of CSS properties like
+          "background-color" and it will be used to style my images. This
+          quarter's project used fonts to alter my text from the basic font of
+          HTML. And finally, my ICT teacher (Ms. Pasco) helped with complex CSS
+          Properties like overflow and overlay to make the project more
+          appealing.
+        </p>
+      </div>
+      <br /><br /><br />
     </div>
   </body>
 </html>

@@ -20,54 +20,44 @@
       crossorigin="anonymous"
     ></script>
 
-    <!--varela round-->
+    <!-- Poetsen One -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
-      rel="stylesheet"
-    />
-
-    <!--oswald-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Varela+Round&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
       rel="stylesheet"
     />
 
     <title>Third Quarter</title>
-    <!--Winter Gallery-->
   </head>
 
   <body>
     <div class="main">
       <div class="container-fluid navigation">
-        <!--Q4 Header Code-->
         <nav class="navbar navbar-expand-xl">
-          <a href="mainpage.html" class="navbar-brand">
+          <a class="navbar-brand">
             <img src="Bright Ace.png" width="100px" class="rounded" />
           </a>
 
           <ul class="navbar-nav">
             <li>
-              <a class="nav-link" href="#">Profile</a>
+              <a class="nav-link" id="prof">Profile</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page2.html">1st Quarter</a>
+              <a class="nav-link" id="1st">1st Quarter</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page3.html">2nd Quarter</a>
+              <a class="nav-link" id="2nd">2nd Quarter</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page4.html">3rd Quarter</a>
+              <a class="nav-link" id="3rd">3rd Quarter</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page5.html">What's Next</a>
+              <a class="nav-link" id="4th">What's Next</a>
             </li>
           </ul>
 
@@ -78,7 +68,37 @@
         </nav>
       </div>
 
-      <br />
+      <script>
+        let profile = "mainpage.html"; //replaces href of the bootstrap code
+        document.getElementById("prof").onclick = function () {
+          //gets the element via id
+          window.location.replace(profile); //function allows the variable be replaced with the new window link
+        };
+
+        let quarter1 = "page2.html"; //replaces href of the bootstrap code
+        document.getElementById("1st").onclick = function () {
+          //gets the element via id
+          window.location.replace(quarter1); //function allows the variable be replaced with the new window link
+        };
+
+        let quarter2 = "page3.html"; //replaces href of the bootstrap code
+        document.getElementById("2nd").onclick = function () {
+          //gets the element via id
+          window.location.replace(quarter2); //function allows the variable be replaced with the new window link
+        };
+
+        let quarter3 = "page4.html"; //replaces href of the bootstrap code
+        document.getElementById("3rd").onclick = function () {
+          //gets the element via id
+          window.location.replace(quarter3); //function allows the variable be replaced with the new window link
+        };
+
+        let whats_next = "page5.html"; //replaces href of the bootstrap code
+        document.getElementById("4th").onclick = function () {
+          //gets the element via id
+          window.location.replace(whats_next); //function allows the variable be replaced with the new window link
+        };
+      </script>
 
       <div class="row" />
       <!--Q3 Header Code-->

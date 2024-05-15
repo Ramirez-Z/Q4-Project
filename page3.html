@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<!--debug code since bootstrap rearranged the text size for the description, check Q3 project for guide-->
 <html>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="styles-tourist.css" />
+
+    <!-- Poetsen One -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap"
       rel="stylesheet"
     />
+
+    <!-- tab icon -->
+    <link rel="icon" type="image/x-icon" href="snoopy-icon.png" />
 
     <!-- bootsrtap -->
     <link
@@ -28,29 +32,29 @@
     <div class="whole">
       <div class="container-fluid navigation">
         <nav class="navbar navbar-expand-xl">
-          <a href="mainpage.html" class="navbar-brand">
+          <a class="navbar-brand">
             <img src="Bright Ace.png" width="100px" class="rounded" />
           </a>
 
           <ul class="navbar-nav">
             <li>
-              <a class="nav-link" href="#">Profile</a>
+              <a class="nav-link" id="prof">Profile</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page2.html">1st Quarter</a>
+              <a class="nav-link" id="1st">1st Quarter</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page3.html">2nd Quarter</a>
+              <a class="nav-link" id="2nd">2nd Quarter</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page4.html">3rd Quarter</a>
+              <a class="nav-link" id="3rd">3rd Quarter</a>
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="page5.html">What's Next</a>
+              <a class="nav-link" id="4th">What's Next</a>
             </li>
           </ul>
 
@@ -60,6 +64,38 @@
           </form>
         </nav>
       </div>
+
+      <script>
+        let profile = "mainpage.html"; //replaces href of the bootstrap code
+        document.getElementById("prof").onclick = function () {
+          //gets the element via id
+          window.location.replace(profile); //function allows the variable be replaced with the new window link
+        };
+
+        let quarter1 = "page2.html"; //replaces href of the bootstrap code
+        document.getElementById("1st").onclick = function () {
+          //gets the element via id
+          window.location.replace(quarter1); //function allows the variable be replaced with the new window link
+        };
+
+        let quarter2 = "page3.html"; //replaces href of the bootstrap code
+        document.getElementById("2nd").onclick = function () {
+          //gets the element via id
+          window.location.replace(quarter2); //function allows the variable be replaced with the new window link
+        };
+
+        let quarter3 = "page4.html"; //replaces href of the bootstrap code
+        document.getElementById("3rd").onclick = function () {
+          //gets the element via id
+          window.location.replace(quarter3); //function allows the variable be replaced with the new window link
+        };
+
+        let whats_next = "page5.html"; //replaces href of the bootstrap code
+        document.getElementById("4th").onclick = function () {
+          //gets the element via id
+          window.location.replace(whats_next); //function allows the variable be replaced with the new window link
+        };
+      </script>
 
       <br />
 
@@ -80,7 +116,7 @@
 
       <br /><br />
 
-      <h2>Ifuago, Northern Luzon</h2>
+      <h2 style="width: 380px">Ifuago, Northern Luzon</h2>
       <div class="main">
         <div class="content">
           <img
@@ -90,8 +126,9 @@
           />
           <div class="overlay">
             <h3>Bananue Rice Terraces</h3>
-            <div class="overlay-text">
+            <div class="overlay-text" style="font-size: 12px">
               <p>
+                <br />
                 The Banaue Rice Terraces are among the Philippines' top tourist
                 destinations. Called the 8th Wonder of the Modern World by
                 locals, these terraces are said to have been carved into the
@@ -110,8 +147,9 @@
           />
           <div class="overlay">
             <h3>Hugduan Rice Terraces</h3>
-            <div class="overlay-text">
+            <div class="overlay-text" style="font-size: 12px">
               <p>
+                <br />
                 The most popular terraces in Hungduan are Hapao Rice Terraces,
                 the Bacung Spider Web Terraces, and the Dakkitan Rice Terraces.
                 Abundant brooks and rivers from the mountains provide water to
@@ -132,6 +170,7 @@
             <h3>Mt. Nagchayan</h3>
             <div class="overlay-text">
               <p>
+                <br />
                 Mt. Nagchayan rises to more than 1,455 MASL and is one of the
                 rustic Ifugao tourist spots. It was a battleground during the
                 Japanese invasion. Both the locals and the Americans pursued
@@ -151,6 +190,7 @@
             <h3>Tentog Falls</h3>
             <div class="overlay-text">
               <p>
+                <br />
                 Tenogtog falls is a three-layered fall with pools in between.
                 According to locals, Tenogtog is an Ifugao word which means,
                 “chopped.” The falls is named as such because this is where
@@ -163,7 +203,7 @@
 
       <br /><br /><br /><br />
 
-      <h2>Bicol, Souther Luzon</h2>
+      <h2 style="width: 350px">Bicol, Southern Luzon</h2>
       <div class="main">
         <div class="content">
           <img
@@ -175,6 +215,7 @@
             <h3>Mayon Volcano</h3>
             <div class="overlay-text">
               <p>
+                <br />
                 What is the description of Mayon Volcano? The Mayon Volcano is
                 situated in the southern part of Luzon. Towering at a height of
                 2,462 MASL, it is known for its perfectly conical shape whose
@@ -195,6 +236,7 @@
             <h3>Calaguas Islands</h3>
             <div class="overlay-text">
               <p>
+                <br />
                 The Calaguas Islands are located in Vinzons,Camarines Norte. It
                 is known for its pristine beaches—the most popular among these
                 is the Mahabang Buhangin beach, which is made up of a long
@@ -214,6 +256,7 @@
             <h3>Sumlang Lake</h3>
             <div class="overlay-text">
               <p>
+                <br />
                 Sumlang Lake offers a peaceful escape from tourist crowds,
                 providing unobstructed 360-degree views of Mayon Volcano. The
                 serene destination is known for its tranquil ambiance and offers
@@ -233,6 +276,7 @@
             <h3>Mount Bulusan</h3>
             <div class="overlay-text">
               <p>
+                <br />
                 Mount Bulusan is a captivating active volcano in the
                 Philippines, standing at 1,565 meters. It boasts a beautiful
                 crater lake, surrounded by lush forests, and is known for
@@ -246,7 +290,7 @@
 
       <br /><br /><br /><br />
 
-      <h2>Visayas</h2>
+      <h2 style="width: 135px">Visayas</h2>
       <div class="main">
         <div class="content">
           <img
@@ -258,6 +302,7 @@
             <h3>Chocolate Hills <em>(Bohol)</em></h3>
             <div class="overlay-text">
               <p>
+                <br />
                 The Chocolate Hills form a rolling terrain of haycock-shaped
                 hills—mounds of a generally conical and almost symmetrical
                 shape. These cone-shaped or dome-shaped hills are made of
@@ -277,6 +322,7 @@
             <h3>Islas de Gigantes <em>(Iloilo)</em></h3>
             <div class="overlay-text">
               <p>
+                <br />
                 Islas de Gigantes in Carles is a stunning group of islands known
                 for their clear blue waters, white sand beaches, etc. This
                 popular tourist spot's name came from the local tales that bones
@@ -294,8 +340,9 @@
           />
           <div class="overlay">
             <h3>Moalboal Sardine Run <em>(Cebu)</em></h3>
-            <div class="overlay-text">
+            <div class="overlay-text" style="font-size: 13px">
               <p>
+                <br />
                 Moalboal Sardine Run diving packages are widely popular both in
                 the Philippines and abroad. It is comparable to the famous
                 sardine run in South Africa. This is more accessible and
@@ -313,8 +360,9 @@
           />
           <div class="overlay">
             <h3>White Beach Boracay <em>(Aklan)</em></h3>
-            <div class="overlay-text">
+            <div class="overlay-text" style="font-size: 12px">
               <p>
+                <br />
                 White Beach Boracay is one of the top tourist spots and the most
                 popular among Visayas beaches. Stretching for 4 kilometers long,
                 featuring very fine white sand and clear blue waters. This is
@@ -326,7 +374,7 @@
       </div>
 
       <br /><br /><br /><br />
-      <h2>Mindanao</h2>
+      <h2 style="width: 175px">Mindanao</h2>
       <div class="main">
         <div class="content">
           <img
@@ -336,8 +384,9 @@
           />
           <div class="overlay">
             <h3>Maria Cristiana Falls <em>(Iligan)</em></h3>
-            <div class="overlay-text">
+            <div class="overlay-text" style="font-size: 13px">
               <p>
+                <br />
                 The Maria Cristina Falls are often referred to as 'twin falls'
                 as the flow of water is separated by a rock at the brink of the
                 fall. Aside from its natural beauty, this 320-foot-high
@@ -354,8 +403,9 @@
           alt="pink beach">
           <div class="overlay">
             <h3>Pink Beach <em>(Zamboanga)</em></h3>
-            <div class="overlay-text">
+            <div class="overlay-text" style="font-size: 12px">
               <p>
+                <br />
                 The Great Santa Cruz Island is also known as the Pink Beach. It
                 offers an amazing pink sand that results from pulverized red
                 organ pipe coral washed up from offshore mixes with white sand.
@@ -367,15 +417,14 @@
         </div>
 
         <div class="content">
-          <img
-            class="pic"
-            src="https://outoftownblog.com/wp-content/uploads/2022/04/Hinatuan-Enchanted-River-by-Lawrence-Craft-via-Flickr-cc-700x467.jpg"
-            alt="enchanted river"
-          />
+          <img class="pic" src="enchanted-river.png" alt="enchanted river" />
           <div class="overlay">
-            <h3>Enchanted River <em>(Surigao del Sur)</em></h3>
-            <div class="overlay-text">
+            <h3 style="font-size: 22px">
+              Enchanted River <em>(Surigao del Sur)</em>
+            </h3>
+            <div class="overlay-text" style="font-size: 13px">
               <p>
+                <br />
                 The Hinatuan Enchanted River in Mindanao, Philippines, is a
                 flawless saltwater river that flows into the Pacific Ocean. it's
                 flow attracts visitors who want to experience the beautiful
@@ -386,15 +435,12 @@
         </div>
 
         <div class="content">
-          <img
-            class="pic"
-            src="https://outoftownblog.com/wp-content/uploads/2019/01/Siargao-Sunset-Cloud-9-700x933.jpg"
-            alt="magpupungko rock"
-          />
+          <img class="pic" src="rock-pools.png" alt="magpupungko rock" />
           <div class="overlay">
             <h3>Magpupungko Rock Pools <em>(Siargao)</em></h3>
-            <div class="overlay-text">
+            <div class="overlay-text" style="font-size: 12px">
               <p>
+                <br />
                 The Magpupungko Pools near the town of Pilar are natural pools
                 between the rocks and reefs right at the beach, which are only
                 completely visible in low tide, exposing the surrounding rocks
@@ -409,7 +455,7 @@
       <center>
         <a href="mainpage.html"
           ><input
-            class="button"
+            class="btn btn-outline-light"
             type="submit"
             name="submit"
             value="Return to Home Page"
