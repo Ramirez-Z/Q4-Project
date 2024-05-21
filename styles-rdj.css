@@ -11,6 +11,10 @@
   margin-left: auto;
 }
 
+.wint-navigation {
+  background-color: #416380ff;
+}
+
 .overlay {
   position: absolute;
   top: 100%;

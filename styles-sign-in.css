@@ -11,6 +11,10 @@
   margin-left: auto;
 }
 
+.wint-navigation {
+  background-color: #416380ff;
+}
+
 body {
   background-image: url(mountain_blue_wallpaper.png);
   background-size: cover;

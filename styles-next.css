@@ -1,0 +1,59 @@
+.navigation {
+  background-color: rgb(206, 196, 90);
+}
+
+.nav-link {
+  color: white;
+  font-family: Poetsen One;
+}
+
+.search {
+  margin-left: auto;
+}
+
+.snoopy-type {
+  border: solid;
+  border-width: 10px;
+}
+
+.suggestion {
+  width: 135px;
+}
+
+.h1 {
+  font-family: Poetsen One;
+  font-size: 50px;
+}
+
+.content {
+  width: 950px;
+}
+
+.description {
+  border: solid;
+  border-radius: 10px;
+  border-width: 5px;
+  padding: 15px;
+  background-color: #243d51ff;
+}
+
+.overview {
+  border-left: dashed;
+  border-right: dashed;
+  border-top: solid;
+  border-bottom: solid;
+  border-radius: 15px;
+  border-width: 5px;
+  padding: 15px;
+
+  background-color: #243d51ff;
+  color: white;
+}
+
+body {
+  background-image: url(mountain_blue_wallpaper.png);
+  background-size: cover;
+  background-attachment: fixed;
+
+  color: lightcyan;
+}
