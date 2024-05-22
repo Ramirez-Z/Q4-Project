@@ -11,10 +11,16 @@
   margin-left: auto;
 }
 
+.footer {
+  font-family: Poetsen One;
+}
+
 body {
   background-image: url(mountain_blue_wallpaper.png);
   background-size: cover;
   background-attachment: fixed;
+
+  font-family: Poetsen One;
 }
 
 .wint-navigation {
